@@ -1,0 +1,49 @@
+#grid-proyect-main{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto auto auto;
+	grid-template-areas: 
+	"introduccion"
+	"proyecto1"
+	"proyecto1text"
+	"proyecto2"
+	"proyecto3";
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+#intro-proyect-main{grid-area: introduccion;}
+#proyecto1{grid-area: proyecto1;}
+#proyecto1text{grid-area: proyecto1text;}
+#proyecto2{grid-area: proyecto2;}
+#proyecto3{grid-area: proyecto3;}
+
+#intro-proyect-main{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	h1{
+		margin: 0%;
+	}
+	p{
+		width: 35%;
+		margin: 0%;
+	}
+}
+
+.proyect-box{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 5% 0% 5% 0%;
+	img{
+		width: 50%;
+	}
+}
+
+#proyecto1text{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: start;
+}

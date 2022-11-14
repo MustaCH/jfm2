@@ -1,0 +1,166 @@
+#grid-index {
+	display: grid;
+	gird-template-columns: 1fr 1fr 1fr;
+	gird-template-rows: auto auto auto auto;
+	grid-template-areas:
+	"principal-1 princial-2 principal-3"
+	"card-index-1 card-index-2 card-index-3"
+	"art-index art-index art-index"
+	"box-index box-index box-index";
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+#principal-1 {gird-area: principal-1;}
+#principal-2 {gird-area: principal-2;}
+#principal-3 {gird-area: principal-3;}
+.card-index-1 {grid-area: card-index-1;}
+.card-index-2 {grid-area: card-index-2;}
+.card-index-3 {grid-area: card-index-3;}
+.art-index {grid-area: art-index;}
+.box-index {grid-area: box-index;}
+
+#principal-1 {
+	display: flex;
+	justify-self: right;
+	justify-content: right;
+	background: rgb(34,40,49);
+	background: linear-gradient(0deg, rgba(34,40,49,1) 0%, rgba(34,40,49,1) 85%, rgba(238,238,238,1) 85%);
+	width: 90%;
+}
+
+#principal-2 {
+	display: flex;
+	justify-content: center;
+
+}
+
+#principal-3 {
+	display: flex;
+	justify-content: left;
+	background: rgb(34,40,49);
+	background: linear-gradient(0deg, rgba(34,40,49,1) 0%, rgba(34,40,49,1) 85%, rgba(238,238,238,1) 85%);
+	width: 90%;
+}
+
+.card-index {
+	display: flex;
+	justify-self: center;
+	width: 68%;
+	text-align: center;
+}
+
+.card-index-1 {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto;
+	grid-template-areas: "texto"
+	"button";
+	p {
+		grid-area: texto;
+		padding: 0% 0% 0% 24%;
+	}
+	button {
+		grid-area: button;
+		width: 45%;
+	}
+}
+
+.card-index-2 {
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto;
+	grid-template-areas: "texto"
+	"button";
+	p {
+		grid-area: texto;
+	}
+	button {
+		grid-area: button;
+		width: 45%;
+	}
+}
+
+.card-index-3{
+		display: grid;
+		grid-template-columns: 100%;
+		grid-template-rows: auto auto;
+		grid-template-areas: "texto"
+		"button";
+	p{
+		grid-area: texto;
+		padding: 0% 24% 0% 0%;
+	}
+	button{
+		grid-area: button;
+		width: 45%;
+	}
+}
+
+.art-index{
+	display: flex;
+	flex-direction: row;
+	justify-self: center;
+	margin: 8% 0% 8% 0%;
+	width: 80%;
+		#art-index-text{
+			display: flex;
+			flex-direction: column;
+			h2{
+				text-align: center;
+				font-size: 1.8rem;
+				width: 70%;	
+				margin: 1% 0% 1% 1%;
+			}
+			p{
+				text-align: center;
+				width: 60%;
+				margin: 1% 0% 1% 1%;
+				padding-left: 4.3%;
+			}
+		}	
+		#art-index-img{
+			box-shadow: -55px 41px 0px 0px rgba(34,40,49,1);
+			img{
+				max-width: 40em;
+				height: 100%;
+				min-height: 20em;
+			}
+		}
+}
+
+.box-index{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	background-color: #222831;
+	padding: 1%;
+		#box-index-1{
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: left;
+			width: 90%;
+			p{
+				width: 30%;
+				margin-left: 2%;
+				color: #EEEEEE;
+			}
+			img{
+				width: 50%;
+			}
+		}
+		#box-index-2{
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: right;
+			width: 90%;			
+			p{
+				width: 30%;
+				margin-left: 2%;
+				color: #EEEEEE;
+			}
+			img{
+				width: 50%;
+			}
+		}
+}
