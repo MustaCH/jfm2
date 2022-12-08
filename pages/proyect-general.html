@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <title>JFM - Proyecto-1</title>
   </head>
@@ -16,7 +20,7 @@
           </span>
           <a href="contacto.html">CONTACTO</a>
           <a href="about.html">ABOUT</a>
-          <a href="#" class="active">PROYECTOS</a>
+          <a href="proyectos.html" class="active">PROYECTOS</a>
           <a href="../index.html">HOME</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
@@ -74,22 +78,22 @@
             fugiat necessitatibus, modi.
           </p>
         </section>
-        <section id="proy-anx">
-          <div class="proy-anx">
-            <img src="../rsc/anx-mod-1.jpg" alt="" />
-            <p>Link a otro proyecto</p>
+        <section id="proy-anx" class="no-mobile">
+          <div class="proy-anx no-mobile">
+            <img src="../rsc/anx-mod-1.jpg" alt="" class="no-mobile" />
+            <p class="no-mobile">Link a otro proyecto</p>
           </div>
-          <div class="proy-anx">
-            <img src="../rsc/anx-mod-2.jpg" alt="" />
-            <p>Link a otro proyecto</p>
+          <div class="proy-anx no-mobile">
+            <img src="../rsc/anx-mod-2.jpg" alt="" class="no-mobile" />
+            <p class="no-mobile">Link a otro proyecto</p>
           </div>
-          <div class="proy-anx">
-            <img src="../rsc/anx-mod-3.jpg" alt="" />
-            <p>Link a otro proyecto</p>
+          <div class="proy-anx no-mobile">
+            <img src="../rsc/anx-mod-3.jpg" alt="" class="no-mobile" />
+            <p class="no-mobile">Link a otro proyecto</p>
           </div>
-          <div class="proy-anx">
-            <img src="../rsc/anx-mod-4.jpg" alt="" />
-            <p>Link a otro proyecto</p>
+          <div class="proy-anx no-mobile">
+            <img src="../rsc/anx-mod-4.jpg" alt="" class="no-mobile" />
+            <p class="no-mobile">Link a otro proyecto</p>
           </div>
         </section>
       </div>
@@ -109,15 +113,25 @@
           </ul>
         </div>
         <div id="footer-rrss">
-          <img src="../rsc/twicon.png" alt="twitter" />
-          <img src="../rsc/igicon.png" alt="instagram" />
-          <img src="../rsc/licon.png" alt="linkedin" />
-          <img src="../rsc/wpicon.png" alt="whatsapp" />
+          <a href=""><img src="../rsc/twicon.png" alt="twitter" /></a>
+          <a href=""><img src="../rsc/igicon.png" alt="instagram" /></a>
+          <a href=""><img src="../rsc/licon.png" alt="linkedin" /></a>
+          <a href=""><img src="../rsc/wpicon.png" alt="whatsapp" /></a>
         </div>
       </footer>
       <!--===============-->
       <!-- CIERRE FOOTER -->
       <!--===============-->
     </main>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>
