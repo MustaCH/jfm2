@@ -32,20 +32,20 @@
       <div class="conte-form">
         <h2>Contacto</h2>
         <hr />
-        <form action="" class="form-cont">
+        <form
+          action="https://formsubmit.co/flaneros25@gmail.com"
+          method="POST"
+          class="form-cont"
+        >
           <label for="nombre-completo"></label><br />
-          <input
-            type="text"
-            name="nombre-completo"
-            placeholder=" Nombre completo"
-          /><br />
+          <input type="text" name="name" placeholder=" Nombre completo" /><br />
 
           <label for="email"></label>
           <input type="text" name="email" placeholder="  Email" /><br />
 
           <label for="mensaje"></label><br />
           <textarea
-            name="mensaje"
+            name="messege"
             id="mensaje"
             cols="30"
             rows="10"
@@ -53,6 +53,12 @@
           ></textarea>
           <input id="envi" class="enviar" type="submit" value="Enviar" />
           <input id="rese" class="reset" type="reset" value="Restablecer" />
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/pages/contacto.html"
+          />
+          <input type="hidden" name="_captcha" value="false" />
         </form>
         <hr class="no-mobile" />
       </div>
