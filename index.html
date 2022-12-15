@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>JFM - Arquitecto</title>
   </head>
@@ -38,10 +39,20 @@
         <!--====================-->
         <div class="aass1 no-mobile">
           <div id="principal-1" class="no-mobile">
-            <img src="./rsc/principal-1.jpg" alt="" />
+            <img
+              src="./rsc/principal-1.jpg"
+              alt=""
+              data-aos="zoom-in-right"
+              data-aos-duration="3000"
+            />
           </div>
           <article class="card-index-1 no-mobile">
-            <div class="card-index no-mobile">
+            <div
+              class="card-index no-mobile"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <p>
                 <strong
                   >Lorem ipsum dolor sit amet, consectetur adipisicing, elit.
@@ -57,10 +68,21 @@
         </div>
         <div>
           <div id="principal-2" class="no-mobile">
-            <img src="./rsc/principal-2.jpg" alt="" class="no-mobile" />
+            <img
+              src="./rsc/principal-2.jpg"
+              alt=""
+              class="no-mobile"
+              data-aos="zoom-in"
+              data-aos-duration="3000"
+            />
           </div>
           <article class="card-index-2 no-mobile">
-            <div class="card-index">
+            <div
+              class="card-index"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <p>
                 <strong
                   >Lorem ipsum dolor sit amet, consectetur adipisicing, elit.
@@ -76,10 +98,20 @@
         </div>
         <div class="aass2 no-mobile">
           <div id="principal-3">
-            <img src="./rsc/principal-3.jpg" alt="" />
+            <img
+              src="./rsc/principal-3.jpg"
+              alt=""
+              data-aos="zoom-in-left"
+              data-aos-duration="3000"
+            />
           </div>
           <article class="card-index-3">
-            <div class="card-index">
+            <div
+              class="card-index"
+              data-aos="fade-down"
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <p>
                 <strong
                   >Lorem ipsum dolor sit amet, consectetur adipisicing, elit.
@@ -99,7 +131,11 @@
         <!-- ARTICULO INDEX -->
         <!--=======================-->
         <section class="art-index no-mobile">
-          <div id="art-index-text">
+          <div
+            id="art-index-text"
+            data-aos="fade-left"
+            data-aos-duration="3000"
+          >
             <h2>Lorem, ipsum dolor sit amet consectetur, adipisicing elit.</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -217,6 +253,10 @@
           x.className = "topnav";
         }
       }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>

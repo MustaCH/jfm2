@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>JFM - About</title>
   </head>
@@ -55,8 +56,15 @@
         <!--ARTICULO-->
         <!--========-->
         <article id="leyenda">
-          <i class="no-mobile">"Lorem ipsum dolor sit, amet."</i>
-          <img src="../rsc/about-1.jpg" alt="" />
+          <i class="no-mobile" data-aos="fade-right" data-aos-duration="3000"
+            >"Lorem ipsum dolor sit, amet."</i
+          >
+          <img
+            src="../rsc/about-1.jpg"
+            alt=""
+            data-aos="fade-left"
+            data-aos-duration="3000"
+          />
         </article>
         <!--===============-->
         <!--CIERRE ARTICULO-->
@@ -64,7 +72,13 @@
         <!--SECCIOÓN FINAL-->
         <!--==============-->
         <section id="nosotros">
-          <img src="../rsc/about-2.jpg" alt="" class="no-mobile" />
+          <img
+            src="../rsc/about-2.jpg"
+            alt=""
+            class="no-mobile"
+            data-aos="fade-up-right"
+            data-aos-duration="3000"
+          />
           <div>
             <h2 class="no-mobile">Nosotros</h2>
             <p>
@@ -94,12 +108,16 @@
             src="../rsc/about-3.jpg"
             alt=""
             class="no-mobile"
+            data-aos="fade-up-left"
+            data-aos-duration="3000"
           />
           <img
             id="about-img-2"
             src="../rsc/about-4.jpg"
             alt=""
             class="no-mobile"
+            data-aos="fade-down-left"
+            data-aos-duration="3000"
           />
         </div>
         <!--=====================-->
@@ -141,6 +159,10 @@
           x.className = "topnav";
         }
       }
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
